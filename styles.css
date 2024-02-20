@@ -1,0 +1,276 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: black;
+}
+
+@media (prefers-reduced-motion: no-prederece) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-bg video {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-bg_content {
+    z-index: 2;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.sub-heading1 {
+    color: white;
+    font-size: 70px;
+    margin-bottom: -30px;
+}
+
+.sub-heading2 {
+    color: cadetblue;
+    font-size: 30px;
+}
+
+.href-content {
+    color: lightblue;
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.block2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(100%);
+}
+
+.list{
+    color: gold;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.image-text {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 20%;
+    font-size: 30px;
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.block2:hover img {
+    transform: scale(1.1);
+    filter: brightness(30%);
+}
+
+.block2:hover .image-text {
+    opacity: 1;
+}
+
+.block3 {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.block3 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(100%);
+}
+
+.image-text2 {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 20%;
+    font-size: 30px;
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.block3:hover img {
+    transform: scale(1.1);
+    filter: brightness(30%);
+}
+
+.block3:hover .image-text2 {
+    opacity: 1;
+}
+
+.block4 {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.block4 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(100%);
+}
+
+.gus{
+    color: gold;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.image-text3 {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 20%;
+    font-size: 30px;
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.block4:hover img {
+    transform: scale(1.1);
+    filter: brightness(30%);
+}
+
+.block4:hover .image-text3 {
+    opacity: 1;
+}
+
+.block5 {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hun{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+
+.block5 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(100%);
+}
+
+.image-text4 {
+    position: absolute;
+    padding-top: 20%;
+    padding-left: 20%;
+    font-size: 40px;
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.block5:hover img {
+    transform: scale(1.1);
+    filter: brightness(30%);
+}
+
+.block5:hover .image-text4 {
+    opacity: 1;
+}
+
+.effects {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Ваши текущие стили */
+
+/* Ваши текущие стили */
+
+/* Новые стили для анимации */
+/* Ваши текущие стили */
+
+/* Новые стили для анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatInPlace {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    animation: fadeInUp 2s ease, floatInPlace 2s ease infinite 2s; /* Добавим вторую анимацию после задержки 2 секунды */
+}
